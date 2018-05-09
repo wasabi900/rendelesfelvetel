@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kontroller.KajaListaKontroller">
+   <children>
+      <Label layoutX="14.0" layoutY="61.0" prefHeight="25.0" prefWidth="579.0" text="Eladás: Árucsoport">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="eloetelek" layoutX="14.0" layoutY="118.0" mnemonicParsing="false" onAction="#eloetelekhez" prefHeight="45.0" prefWidth="125.0" text="Előételek" />
+      <Button fx:id="foetelek" layoutX="14.0" layoutY="178.0" mnemonicParsing="false" onAction="#foetelekhez" prefHeight="45.0" prefWidth="125.0" text="Főételek" />
+      <Button fx:id="desszertek" layoutX="14.0" layoutY="243.0" mnemonicParsing="false" onAction="#desszertekhez" prefHeight="45.0" prefWidth="125.0" text="Desszertek" />
+      <Button fx:id="italok" layoutX="14.0" layoutY="316.0" mnemonicParsing="false" onAction="#italokhoz" prefHeight="45.0" prefWidth="125.0" text="Italok" />
+      <TableView fx:id="rendelestabla" layoutX="462.0" layoutY="27.0" prefHeight="334.0" prefWidth="263.0">
+         <columns>
+            <TableColumn fx:id="kajaneve" prefWidth="110.0" text="Kaja" />
+            <TableColumn fx:id="kajaara" prefWidth="64.0" text="Ár" />
+            <TableColumn fx:id="kajamennyisege" prefWidth="75.0" text="Mennyiség" />
+         </columns>
+      </TableView>
+      <Label layoutX="482.0" layoutY="434.0" prefHeight="32.0" prefWidth="111.0" text="Végösszeg:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="vegosszeg" layoutX="614.0" layoutY="434.0" prefHeight="17.0" prefWidth="111.0" text="0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="kesz" layoutX="500.0" layoutY="541.0" mnemonicParsing="false" onAction="#rendelesfelv" prefHeight="25.0" prefWidth="236.0" text="Tovább a rendelő adatainak felvételéhez" textAlignment="CENTER" />
+      <Button fx:id="kilepes" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#vissza" text="Kilépés" />
+      <Label fx:id="valasszKajat" alignment="CENTER" layoutX="41.0" layoutY="492.0" prefHeight="17.0" prefWidth="173.0" textFill="RED" />
+   </children>
+</AnchorPane>

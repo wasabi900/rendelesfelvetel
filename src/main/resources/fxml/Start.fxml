@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kontroller.StartKontroller">
+   <children>
+      <Label layoutX="200.0" layoutY="23.0" prefHeight="30.0" prefWidth="201.0" text="Vegyük fel a rendelést" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="107.0" prefHeight="21.0" prefWidth="43.0" text="Név">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nev" layoutX="87.0" layoutY="105.0" prefHeight="25.0" prefWidth="106.0" />
+      <Label layoutX="32.0" layoutY="149.0" prefHeight="21.0" prefWidth="43.0" text="Jelszó">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="jelszo" layoutX="87.0" layoutY="147.0" prefHeight="25.0" prefWidth="106.0" />
+      <Button fx:id="eladas" layoutX="29.0" layoutY="211.0" mnemonicParsing="false" onAction="#tovabbKajakhoz" text="Eladás" />
+      <Button fx:id="munkatarsfelv" layoutX="452.0" layoutY="361.0" mnemonicParsing="false" onAction="#munkatarsfelv" text="Új munkatárs felvétele" />
+      <Label fx:id="hibasFelhJelsz" alignment="CENTER" layoutX="167.0" layoutY="268.0" prefHeight="17.0" prefWidth="268.0" textFill="RED" />
+   </children>
+</AnchorPane>

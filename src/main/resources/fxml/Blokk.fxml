@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kontroller.BlokkKontroller">
+   <children>
+      <Label layoutX="18.0" layoutY="26.0" text="Rendelő adatai:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="102.0" text="Telefonszám:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="telefon" layoutX="154.0" layoutY="102.0" prefHeight="30.0" prefWidth="218.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="163.0" text="Név:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nev" layoutX="154.0" layoutY="163.0" prefHeight="30.0" prefWidth="218.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="219.0" text="Cím:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="cim" layoutX="154.0" layoutY="219.0" prefHeight="30.0" prefWidth="218.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="438.0" text="Kedvezmény: ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="kedvezmeny" layoutX="168.0" layoutY="438.0" prefHeight="30.0" prefWidth="111.0" text="0 %">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="466.0" prefHeight="32.0" prefWidth="122.0" text="Végösszeg:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="vegosszeg" layoutX="168.0" layoutY="466.0" prefHeight="17.0" prefWidth="111.0" text="0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="450.0" layoutY="26.0" prefHeight="32.0" prefWidth="187.0" text="Rendelés adatai:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="rendelestabla" layoutX="450.0" layoutY="67.0" prefHeight="334.0" prefWidth="263.0">
+         <columns>
+            <TableColumn fx:id="kajaneve" prefWidth="110.0" text="Kaja" />
+            <TableColumn fx:id="kajaara" prefWidth="64.0" text="Ár" />
+            <TableColumn fx:id="kajamennyisege" prefWidth="75.0" text="Mennyiség" />
+         </columns>
+      </TableView>
+      <Button fx:id="rendelesZaras" layoutX="592.0" layoutY="541.0" mnemonicParsing="false" onAction="#vissza" text="Újabb rendelés felvétele" />
+   </children>
+</AnchorPane>
