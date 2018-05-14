@@ -18,14 +18,11 @@ limitations under the License.
  * #L%
  */
 import entitas.*;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
 
-public class UnitTeszt {
+public class UnitTest {
 
     @Test
     public void tesztSetKedvezmeny() {
